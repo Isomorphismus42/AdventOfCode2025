@@ -50,7 +50,6 @@ def part2():
                 if number == digits:
                     repetitive_numbers.append(int(number))
                     break
-    repetitive_numbers.append(0)
     return sum(repetitive_numbers)
 
 
