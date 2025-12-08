@@ -21,7 +21,7 @@ def read_input(day: int, test: bool = False):
 def part1():
     coordinates = [tuple(map(int, line.split(','))) for line in read_input(8)]
     n = len(coordinates)
-    routing_table = np.zeros((n, n))
+    routing_table = np.zeros((n, n)) # will have 0s on the diagonal
     for i, coordinate1 in enumerate(coordinates):
         for j, coordinate2 in enumerate(coordinates):
             euklid_distance = (math.dist(coordinate1, coordinate2))
@@ -62,7 +62,7 @@ def part1():
 def part2():
     coordinates = [tuple(map(int, line.split(','))) for line in read_input(8)]
     n = len(coordinates)
-    routing_table = np.zeros((n, n))
+    routing_table = np.zeros((n, n)) # will have 0s on the diagonal
     for i, coordinate1 in enumerate(coordinates):
         for j, coordinate2 in enumerate(coordinates):
             euklid_distance = (math.dist(coordinate1, coordinate2))
